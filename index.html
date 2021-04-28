@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Harel Fogel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="http://se.shenkar.ac.il/teach/web1/2021/get_form3.php"  autocomplete="on" id="contact" method="get" autocomplete="on">
+            <h3>Join Our Members Club</h3>
+            <fieldset>
+                <input placeholder="Full name" type="name" value="" pattern="([^\s]+\s)+[^\s]+" tabindex="1">
+            </fieldset>
+            <fieldset>
+                <input placeholder="Password" type="password" name="pass" value=""
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    required tabindex="2">
+            </fieldset>
+            <fieldset>
+                <input placeholder="Email:" type="email" name="mail" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Phone Number" type="tel" name="phone" name="phone" tabindex="4" maxlength="10"
+                    required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Amount of Coffee:" type="number" name="coffee" min="0" max="8" tabindex="5"
+                    required>
+            </fieldset>
+
+            <fieldset>
+                <input placeholder="Your Web Site" type="url" name="website" tabindex="7" required>
+            </fieldset>
+
+            <fieldset>
+                <textarea placeholder="Address" name="address" rows="6" cols="30" tabindex="8" required></textarea>
+            </fieldset>
+            <fieldset>
+                <fieldset>
+                    <label>Choose your interests:</label><br>
+                    <section>
+                        <div class="row form-check">
+                            <input type="checkbox" name="interests[]" value="Reading Books" class="col-1">
+                            <label class="col-2">Traveling</label>
+                        </div>
+                        <div class="row form-check">
+                            <input type="checkbox" name="interests[]" value="travel" class="col-1">
+                            <label class="col-2">Reading</label>
+                        </div>
+                        <div class="row form-check">
+                            <input type="checkbox" name="interests[]" value="bed" class="col-1">
+                            <label class="col-2">Eating</label>
+                        </div>
+                    </section>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <lable>Temperture:</lable>
+                <input placeholder="Temperture:" type="range" name="temper" min="0" max="40" tabindex="6" required>
+            </fieldset>
+            <fieldset>
+                <label>Gender:</label>
+                <div class="row form-check">
+                    <input type="radio" id="male" name="gender" value="male" class="col-1">
+                    <label for="male" class="col-2">Male</label>
+                </div>
+                <div class="row form-check">
+                    <input type="radio" id="female" name="gender" value="female" class="col-1">
+                    <label for="female" class="col-2">Female</label>
+                </div>
+                <div class="row form-check">
+                    <input type="radio" id="other" name="gender" value="other" class="col-1">
+                    <label for="other" class="col-2">Other</label>
+                </div>
+            </fieldset>
+            <fieldset>  
+            <label for="age"><b> Age:</b></label>
+            <select name="age">
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+            </select>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
