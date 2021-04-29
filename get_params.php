@@ -26,8 +26,9 @@
                 else{
                     //The amount of money will be calaculated: the sum of digits in the password+ the lenth of your user name
                 $sum=$sum+strlen($un); 
+               
                 echo "<h1> Thank you ".$un." !For donating and makes the world a better place for pandas.<br>You are AWESOME!</h1>";
-                "<h2> You have donated generously .$sum.$!<br><h2>
+                echo"<h2> You have donated generously ".$sum."$!<br><h2>
                 <h4>Your donation is calculated by adding the number of digits in your password and number of letters in your name</h4>";
                 }
                 ?>
